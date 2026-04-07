@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: abalone-age-predictor
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: true
+      - key: STREAMLIT_SERVER_ENABLEXSRFPROTECTION
+        value: false
