@@ -42,5 +42,5 @@ if st.button("Predict Age"):
 
     prediction = model.predict(input_df)
     st.subheader("Prediction")
-    st.write(f"Predicted Age: {prediction[0]:.2f}")
+    st.write(f"Predicted Age: {prediction[0]:.2f} years")
   
